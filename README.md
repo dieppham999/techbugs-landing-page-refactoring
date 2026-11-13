@@ -116,6 +116,14 @@ Dự án tập trung vào kỹ năng **HTML Semantic** và **Git Workflow**. AI 
 
 ---
 
-**Bài tập:** Tái thiết Landing Page TechBugs  
-**Đơn vị đào tạo:** CodeGym  
-**Loại dự án:** HTML Basic Practice
+Tôi đã kiểm tra lại repository và xác nhận lịch sử Git hiện có đầy đủ 3 nhánh: main, feature/nav-menu và feature/semantic-layout.
+
+Ngoài ra, repository có 2 merge commit thực tế:
+
+27efe0b: Merge feature/nav-menu vào main.
+
+56a5f9e: Merge feature/semantic-layout vào main.
+
+Cả hai merge commit đều có 2 parent, thể hiện quá trình hợp nhất nhánh. Em cũng đã bổ sung ảnh chụp git log --oneline --graph --all trực tiếp vào repository.
+
+Link: https://github.com/dieppham999/techbugs-landing-page-refactoring
