@@ -124,7 +124,7 @@ Ngoài ra, repository có 2 merge commit thực tế:
 
 56a5f9e: Merge feature/semantic-layout vào main.
 
-Cả hai merge commit đều có 2 parent, thể hiện quá trình hợp nhất nhánh. Em cũng đã bổ sung ảnh chụp git log --oneline --graph --all trực tiếp vào repository.
+Cả hai merge commit đều có 2 parent, thể hiện quá trình hợp nhất nhánh. Em cũng đã bổ sung ảnh chụp ![Git Graph - Branching and Merging](Screenshot.png) trực tiếp vào repository.
 
 Link: https://github.com/dieppham999/techbugs-landing-page-refactoring
 
