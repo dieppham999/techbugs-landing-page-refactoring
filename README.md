@@ -127,3 +127,23 @@ Ngoài ra, repository có 2 merge commit thực tế:
 Cả hai merge commit đều có 2 parent, thể hiện quá trình hợp nhất nhánh. Em cũng đã bổ sung ảnh chụp git log --oneline --graph --all trực tiếp vào repository.
 
 Link: https://github.com/dieppham999/techbugs-landing-page-refactoring
+
+## Câu hỏi vấn đáp
+
+### 1. Tại sao dùng `<article>` thay vì `<section>`?
+
+- `<article>`: Biểu diễn nội dung độc lập, có ý nghĩa riêng.
+- `<section>`: Nhóm các nội dung có cùng chủ đề.
+- Trong TechBugs, `<section>` chứa danh sách dịch vụ, còn `<article>` đại diện cho từng dịch vụ riêng biệt.
+
+### 2. Điều gì xảy ra nếu quên `checkout main` trước khi tạo nhánh thứ hai?
+
+- Nhánh thứ hai sẽ được tạo từ nhánh hiện tại, kế thừa các commit của nhánh thứ nhất.
+- Hai nhánh không còn độc lập, gây khó khăn khi quản lý, review và merge.
+- Cách đúng: Chuyển về `main` bằng `git checkout main`, sau đó tạo nhánh mới bằng `git checkout -b feature/semantic-layout`.
+
+### 3. Khi nào dùng `<ol>` thay vì `<ul>`?
+
+- `<ul>`: Danh sách không yêu cầu thứ tự, phù hợp với menu điều hướng.
+- `<ol>`: Danh sách có thứ tự quan trọng, ví dụ các bước đăng ký tài khoản hoặc hướng dẫn cài đặt.
+- Trong TechBugs, sử dụng `<ul>` vì thứ tự các mục menu không quyết định ý nghĩa của danh sách.
